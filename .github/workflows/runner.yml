@@ -13,6 +13,6 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Install dependencies
-        run: dotname restore
+        run: dotnet restore
       - name: Build
         run: dotnet run Learning.ProcessX.Runner.csproj -- info --list-name list-sdks
