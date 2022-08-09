@@ -11,8 +11,8 @@ jobs:
       - name: Display the workspace
         run: echo ${{ github.workspace }}
         shell: cmd
-      - name: Display the path
-        run: echo %PATH%
+      - name: Display directories
+        run: dir
         shell: cmd
       - name: Setup .NET SDK 6.0.x
         uses: actions/setup-dotnet@v2
