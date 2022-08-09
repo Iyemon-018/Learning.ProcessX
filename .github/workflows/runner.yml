@@ -1,0 +1,18 @@
+name: Runner Demo
+
+on: [ workflow_dispatch ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET SDK 6.0.x
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.x
+      - name: Install dependencies
+        run: dotname restore
+      - name: Build
+        run: dotnet run Learning.ProcessX.Runner.csproj -- info --list-name list-sdks
