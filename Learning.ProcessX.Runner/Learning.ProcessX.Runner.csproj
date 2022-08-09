@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ConsoleAppFramework" Version="4.2.2" />
+    <PackageReference Include="ProcessX" Version="1.5.4" />
+  </ItemGroup>
+
 </Project>

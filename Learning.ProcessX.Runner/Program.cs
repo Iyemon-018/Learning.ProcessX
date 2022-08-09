@@ -1,9 +1,1 @@
-﻿namespace Learning.ProcessX.Runner;
-
-internal class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
-}
+﻿ConsoleApp.Run(args, (string name) => Console.WriteLine($"Hello {name}"));
