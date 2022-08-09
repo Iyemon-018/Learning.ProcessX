@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet run Learning.ProcessX.Runner\Learning.ProcessX.Runner.csproj -- info --list-name list-sdks
+        run: dotnet run ${{ env.GITHUB_WORKSPACE }}\Learning.ProcessX.Runner\Learning.ProcessX.Runner.csproj -- info --list-name list-sdks
