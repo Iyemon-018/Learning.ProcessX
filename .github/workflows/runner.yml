@@ -20,5 +20,7 @@ jobs:
           dotnet-version: 6.0.x
       - name: Install dependencies
         run: dotnet restore
-      - name: Build
+      - name: Run and display SDK list.
         run: dotnet run --project ${{ github.workspace }}\Learning.ProcessX.Runner\Learning.ProcessX.Runner.csproj -- info --list-name list-sdks
+      - name: Run and diaplay Runtime list.
+        run: dotnet run --project Learning.ProcessX.Runner\Learning.ProcessX.Runner.csproj -- info --list-name list-runtimes
